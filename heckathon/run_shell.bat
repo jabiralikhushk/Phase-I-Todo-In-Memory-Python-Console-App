@@ -1,0 +1,55 @@
+@echo off
+REM Interactive Todo Shell Demo Script
+
+echo.
+echo ================================================================
+echo.
+echo         Interactive Todo Application - Live Demo
+echo.
+echo ================================================================
+echo.
+echo The shell.py application is ready to use!
+echo.
+echo To start the interactive shell, run:
+echo.
+echo     python shell.py
+echo.
+echo Then type commands like:
+echo.
+echo     ^> add "Task name" "Description"
+echo     ^> view
+echo     ^> complete 1
+echo     ^> exit
+echo.
+echo ================================================================
+echo.
+echo Key Features:
+echo   * Type commands one at a time
+echo   * State persists across commands (until you exit)
+echo   * No need to restart between commands
+echo   * Supports Urdu/English mix
+echo   * Instant feedback
+echo.
+echo Commands Available:
+echo   add ^<title^> [^<desc^>]  - Add new task
+echo   view                 - View all tasks
+echo   complete ^<id^>       - Mark task complete
+echo   incomplete ^<id^>     - Mark incomplete
+echo   update ^<id^> ^<title^>  - Update task
+echo   delete ^<id^>         - Delete task
+echo   help                 - Show help
+echo   exit / quit          - Exit shell
+echo.
+echo ================================================================
+echo.
+
+REM Start the shell
+echo Starting shell...
+echo.
+call C:/Users/DELL/Desktop/heckathon/.venv/Scripts/python.exe shell.py
+
+echo.
+echo ================================================================
+echo Shell closed. Goodbye!
+echo ================================================================
+echo.

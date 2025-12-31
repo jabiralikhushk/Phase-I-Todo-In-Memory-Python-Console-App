@@ -1,0 +1,23 @@
+{
+  "feature": "Mark Complete",
+  "version": "1.0",
+  "date": "2025-12-31",
+  "description": "Users can mark tasks as complete by ID",
+  "requirements": [
+    "Find task by ID",
+    "Update completion status to true",
+    "Should handle invalid IDs gracefully",
+    "Return success/failure status",
+    "Provide confirmation message to user"
+  ],
+  "command_format": "python -m src.main complete <task_id>",
+  "example": {
+    "input": "python -m src.main complete 1",
+    "output": "Marked task #1 as complete"
+  },
+  "error_cases": [
+    "Task ID does not exist",
+    "Invalid task ID format (non-integer)",
+    "Task already marked as complete (optional - could be idempotent)"
+  ]
+}
